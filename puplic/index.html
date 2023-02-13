@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- contain meta date that not appear inside the page-->
+    <meta charset="UTF-8"> <!--This attribute declares the document's character encoding-->
+    <meta name="author" content="Esraa">
+    <!--the name attribute giving the metadata name, and the content attribute giving the value.-->
+    <meta name="description" content="TO Do List">
+
+    <title>To Do List</title>
+
+    <link rel="icon" href="indexIcon.jpeg"><!--set icon to title:-->
+    <link rel="stylesheet" href="logPage.css" type="text/css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+       <div class="log">
+        <button class="logButton" onclick="changeProp(this);signIn()" >
+            Sign in
+        </button>
+        <button class="logButton" onclick="changeProp(this);signUp()">
+            Don't have an account
+        </button>
+
+        <div id="signIn">
+            <h3>Sign In</h3>
+
+            <form >
+                <label>
+                    User Name
+                </label><br>
+                <input type="text" value="your name"><br>
+                
+                <label>
+                    Password
+                </label><br>
+                <input type="password" value="your secret password"><br>
+
+            </form>
+            <a href="#">Create your account</a>
+            <p>welcome back <span style="color:red"> forger password?</span> </p>
+        </div>
+
+        <div id="signUp">
+            <h3>Create your free account</h3>
+
+            <form >
+                <label>
+                    Full Name
+                </label><br>
+                <input type="text" value="your name"><br>
+                <label>
+                    Email address
+                </label><br>
+                <input type="email" value="your email address xxxx@"><br>
+                <label>
+                    Password
+                </label><br>
+                <input type="password" value="your secret password"><br>
+
+            </form>
+            <a href="#">Create your account</a>
+            <p>By siging up, you agree to our communications and usage terms Aready have an account? <span style="color:#006ae2">Sign in</span> </p>
+        </div>
+       </div>
+            <div id="backphoto">
+                <img src="log.png" alt="hello from photo">
+            </div>
+
+        
+    </div>
+
+    <script src="logPage.js"></script>
+</body>
