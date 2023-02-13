@@ -1,0 +1,51 @@
+body{
+    background-color: #000066;
+
+}
+.container{
+  
+    margin: 75px;
+    border: 1px solid #000066;
+    border-radius: 10px;
+    background-color: #fff;
+   position: relative;
+    height: 600px;
+    
+}
+#backphoto{
+   
+  
+position: absolute;
+    right: 30px;
+}
+
+.log{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border: 1px solid #000;
+    height: 80%;
+    width: 57%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.log button{
+    border: none;
+    background-color: #fff;
+    font-size: 17px;
+    margin-right: 40px;
+}
+
+
+.log button:first-child{
+    background-color: #006ae2;
+    color: #fff;
+}
+.log button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  #signUp{
+    display: none;
+  }
