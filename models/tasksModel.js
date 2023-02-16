@@ -16,9 +16,15 @@ const taskSchema = new mongoose.Schema(
 			type: Boolean,
 			default: false,
 		},
-        deadLine:{
-            type:new Date()
-        }
+		deadLine: {
+			type: Date,
+			default: Date.now(),
+		},
+		createdBy: {
+			type: mongoose.Types.ObjectId,
+			ref: "User",
+			required: [true, "please provide a user"],
+		},
 	},
 	{ timestamps: true }
 )
