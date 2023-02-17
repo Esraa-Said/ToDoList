@@ -37,3 +37,26 @@ if(innerWidth<=1000){
 const container = document.getElementsByClassName("container");
 container[0].style.height = (innerHeight-300) + 'px';
 }
+
+// logIn
+function logIn(){
+    const inputs = document.getElementsByTagName("input");
+
+    dataIn = {
+        username : inputs[0].value,
+        password : inputs[1].value
+    };
+    console.log(dataIn);
+};
+
+// logUp
+function logUp(){
+    const inputs = document.getElementsByTagName("input");
+
+    dataup = {
+        username : inputs[2].value,
+        email : inputs[3].value,
+        password : inputs[4].value
+    };
+    console.log(dataup);
+};
