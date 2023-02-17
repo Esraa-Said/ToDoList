@@ -31,3 +31,9 @@ function signIn(){
     sign.style.display = "block";
 
 }
+if(innerWidth<=1000){
+
+
+const container = document.getElementsByClassName("container");
+container[0].style.height = (innerHeight-300) + 'px';
+}
