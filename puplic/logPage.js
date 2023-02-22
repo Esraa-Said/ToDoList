@@ -39,18 +39,23 @@ container[0].style.height = (innerHeight-300) + 'px';
 }
 
 // logIn
-function logIn(){
+async function logIn(){
     const inputs = document.getElementsByTagName("input");
 
     dataIn = {
         username : inputs[0].value,
         password : inputs[1].value
     };
-    console.log(dataIn);
+    try {
+		const res = await axios.post("http://localhost:3000/api/users/login", dataIn)
+		console.log(res.data)
+	} catch (err) {
+		console.log(err)
+	}
 };
 
 // logUp
-function logUp(){
+async function logUp(){
     const inputs = document.getElementsByTagName("input");
 
     dataup = {
@@ -58,5 +63,11 @@ function logUp(){
         email : inputs[3].value,
         password : inputs[4].value
     };
-    console.log(dataup);
+    
+    try {
+		const res = await axios.post("http://localhost:3000/api/users/register", dataup)
+		console.log(res.data)
+	} catch (err) {
+		console.log(err)
+	}     
 };
