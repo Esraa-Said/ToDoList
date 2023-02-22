@@ -52,6 +52,8 @@ async function logIn(){
 	} catch (err) {
 		console.log(err)
 	}
+    inputs[0].value = "";
+    inputs[1].value = "";
 };
 
 // logUp
@@ -70,4 +72,7 @@ async function logUp(){
 	} catch (err) {
 		console.log(err)
 	}     
+    inputs[2].value = "";
+    inputs[3].value = "";
+    inputs[4].value = "";
 };
